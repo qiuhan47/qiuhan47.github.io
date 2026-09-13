@@ -60,6 +60,33 @@
   
   
   <entry>
+    <title>光束之路</title>
+    <link href="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/"/>
+    <url>/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/</url>
+    
+    <content type="html"><![CDATA[<h3 id="下载关卡白盒"><a href="#下载关卡白盒" class="headerlink" title="下载关卡白盒"></a>下载关卡白盒</h3><a href="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/LevelBox.rar" title="点击下载">点击下载</a><h3 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h3><p>你被困在遭魔物占领的远古神殿深处。这座古老建筑布满神秘的能量机关，错综复杂的建筑结构交织着多条岔路与迂回环路，既有露天屋顶通道，也有多层幽深的室内空间。<br>你可以奔跑、跳跃，释放特殊能量光束对抗入侵者。光束的力量可以顺着水面扩散，伤害接连传导至多名敌人；对准神殿各处的紫色锚点，还能瞬间将自己传送至锚点位置；击中电路装置，便可开启封闭通路，打开锁住的大门。<br>场景里处处暗藏危机：刺眼的红色区域是致命陷阱，游荡的绿色魔物会对你发起袭击。你需要穿梭在分支交错的神殿空间，一边对抗魔物，一边解读机关，找寻解锁通路的办法。在迂回往复的探索之中突破重重阻碍，战胜盘踞于此的首领，逃离这座沦陷的神殿。</p><img src="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/image3.png" class="" title="设计草图"><img src="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/image4.png" class="" title="设计草图"><img src="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/image5.png" class="" title="设计草图"><h3 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h3><p>关卡的探索结构基于“大环路、小支路”设计，随关卡推进地图纵向丰富度不断增加，在中心区域可以开辟出屋顶道路，在室内则有三层楼可供探索。<br>地图设计草图如下：</p><img src="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/image1.png" class="" title="设计草图"><img src="/2025/10/08/%E9%9B%B7%E7%94%B5%E7%A5%9E%E6%AE%BF/image2.png" class="" title="设计草图"><p>绘制完成后按照草图搭建关卡白盒，在适当的位置放置敌人、奖励和引导，使得玩家动线尽量符合设计预期。至此完成了关卡白盒的设计。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>关卡白盒</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>3d</tag>
+      
+      <tag>类魂</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>美食大富翁</title>
     <link href="/2025/06/18/%E7%BE%8E%E9%A3%9F%E5%A4%A7%E5%AF%8C%E7%BF%81/"/>
     <url>/2025/06/18/%E7%BE%8E%E9%A3%9F%E5%A4%A7%E5%AF%8C%E7%BF%81/</url>
