@@ -11,6 +11,18 @@
     <content type="html"><![CDATA[<h1 id="鬼武者战斗拆解"><a href="#鬼武者战斗拆解" class="headerlink" title="鬼武者战斗拆解"></a>鬼武者战斗拆解</h1><p>《鬼武者：剑之道》<strong>是一套“极简输入 + 读招防守 + 一闪处决 + 吸魂资源”的剑戟博弈系统。</strong>它的战斗深度不像传统动作游戏那样专注于手速和连招长度，它更注重策略博弈——面对不同的攻击，你选防御、弹开、化劲、看破回避、反抓，还是直接一闪。</p><h2 id="设计内核：四大支柱"><a href="#设计内核：四大支柱" class="headerlink" title="设计内核：四大支柱"></a>设计内核：四大支柱</h2><p>这套系统可以用四个词概括：</p><ol><li><p><strong>时空</strong>：时机与距离。对时间和空间的把握本身就是动作游戏的基础。</p></li><li><p><strong>接招</strong>：对敌人动作的应对方式（化劲、弹开、一闪等），把防守成功兑现成处决收益。</p></li><li><p><strong>吸魂</strong>：将操作博弈转化为资源博弈，让资源系统融入战斗。</p></li><li><p><strong>力动</strong>：作为另一种血条，但又不同于血条。力动值会随时间恢复，提醒着玩家注意攻防节奏。</p></li></ol><p>核心循环是：</p><blockquote><p>敌人攻击 → 选择防御手段 → 削减力动 → 崩&#x2F;处决&#x2F;一闪 → 吸魂 → 强化 → 敌人继续攻击</p></blockquote><p>这套循环里，动作、敌人、资源三个系统互相咬合，环环相扣。下文会逐层拆解各系统。</p><h2 id="动作设计：输入极简，情境极繁"><a href="#动作设计：输入极简，情境极繁" class="headerlink" title="动作设计：输入极简，情境极繁"></a>动作设计：输入极简，情境极繁</h2><h3 id="输入层被刻意做“薄”"><a href="#输入层被刻意做“薄”" class="headerlink" title="输入层被刻意做“薄”"></a>输入层被刻意做“薄”</h3><p>本作删掉了大量动作派生，玩家的进攻<strong>几乎只保留轻攻击与重攻击</strong>；冲刺、轻击、重击都不消耗体力，可以持续进攻。防御端则并列保留：</p><ul><li><p>闪避</p></li><li><p>看破回避（精准闪避）</p></li><li><p>防御</p></li><li><p>化劲（精准防御）</p></li><li><p>弹开</p></li><li><p>一闪</p></li></ul><p>最复杂的操作，也不过是“按住LB防御时按A弹开”，或者“在白刃相交过程中切换轻重攻击”。单看输入，这些操作接近QTE；但通过动作堆料和敌人匹配，做出了大量情境变化。</p><p><strong>设计意图</strong>：降低上手门槛，把难度从“搓招”转移到“读招与选择”。这是一种典型的“低操作门槛、高决策密度”的现代动作游戏路线。</p><h3 id="防御谱系：六种“接招”方式"><a href="#防御谱系：六种“接招”方式" class="headerlink" title="防御谱系：六种“接招”方式"></a>防御谱系：六种“接招”方式</h3><p>六种应对敌人攻击的方式如下表所示：</p><table><thead><tr><th><strong>机制</strong></th><th><strong>输入（手柄参考）</strong></th><th><strong>主要用途</strong></th><th><strong>效果</strong></th><th><strong>风险</strong></th><th><strong>特点</strong></th></tr></thead><tbody><tr><td>闪避<br></td><td>按A键<br></td><td>拉开距离躲避攻击</td><td>快速位移一段距离</td><td>收益很小</td><td>低风险低回报<br></td></tr><tr><td>看破回避</td><td>被体术攻击瞬间按A</td><td>体术攻击、抓取、不可化劲招式</td><td>无敌帧躲开；闪避后按X可接“看破连斩”，大幅削力动</td><td>需要时机判断</td><td>中风险中回报</td></tr><tr><td>防御</td><td>按住LB</td><td>快速、密集攻击<br></td><td>消耗自身力动值，挡住敌人伤害</td><td>持续防御会吃力动惩罚，可能被破防</td><td>低风险低回报</td></tr><tr><td>化劲</td><td>被武器攻击瞬间按LB<br></td><td>应对武器攻击<br></td><td>让敌人露出破绽，削减力动，积累“气焰”</td><td>时机要求高，误判会吃满伤害</td><td>中风险中回报</td></tr><tr><td>弹开</td><td>按住LB，受击前按A<br></td><td>弹开飞行物、应对武器攻击<br></td><td>反弹远程攻击，极大削减力动</td><td>时机要求更高，误判会约等于只按了防御</td><td>中风险中回报</td></tr><tr><td>一闪<br></td><td>被抓瞬间按A键<br></td><td>对特定攻击进行收益最大化</td><td>闪开攻击并造成巨额伤害<br></td><td>时机要求极高</td><td>高风险高回报</td></tr></tbody></table><p>此外还有角力、白刃相交。但它们更像触发特定条件后的QTE判断，而不是主动使出的接招方式，因此不计入。</p><p><strong>关键设计点</strong>：这六种接招方式拥有彼此匹配的风险和回报，因此玩家需要根据具体条件判断自己选择哪种接招方式，这就丰富了策略深度。</p><p>它不像信号灯游戏存在绝对最优解，看到什么招就按什么键已经写死，游戏退化为一种手速检测器。也没有落入那些花架子动作游戏的误区——这些游戏招式繁多，但彼此没有做出功能区分，导致大部分招式只是增加游戏复杂度的堆料，而没有增加策略深度。</p><h3 id="一闪：整套系统的灵魂"><a href="#一闪：整套系统的灵魂" class="headerlink" title="一闪：整套系统的灵魂"></a>一闪：整套系统的灵魂</h3><p>一闪的触发方式是：<strong>在敌人攻击命中的瞬间按攻击键</strong>。它被明确定义为“高风险、高回报”，判定十分苛刻，不熟练时乱按反而会大幅提高难度。</p><p>但它有几个非常关键的设计细节：</p><ol><li><p><strong>原则上“一切皆可一闪”</strong>：除了蓝色投技、粉色“不可回避攻击”等特殊提示外，绝大多数攻击都能被一闪。这个“几乎万能”的承诺，是一闪爽感的核心。</p></li><li><p><strong>轻重攻击触发时机不同</strong>：轻攻击与重攻击触发一闪的效果不一样，增加了武器与招式匹配的深度。</p></li><li><p><strong>成功收益极强</strong>：闪开敌人攻击，打断敌人行动，重创敌人血量，正反馈极强，会诱导玩家持续冒险。</p></li><li><p><strong>失败有代价</strong>：失手会完整吃下攻击，打断接招节奏。</p></li></ol><p><strong>崩之一闪</strong>是一种处决：打空敌人的力动&#x2F;架势后，敌人进入“崩”的状态，此时可以发动崩之一闪，并用方向键选择攻击部位：</p><ul><li><p><strong>红色印记</strong>：削减更多体力。</p></li><li><p><strong>紫色印记</strong>：释放更多灵魂。</p></li></ul><p>这将“处决”从单纯的演出转变为一种<strong>资源选择</strong>。</p><h3 id="力动：与血条不同的“第二血条”"><a href="#力动：与血条不同的“第二血条”" class="headerlink" title="力动：与血条不同的“第二血条”"></a>力动：与血条不同的“第二血条”</h3><img src="/2026/11/10/%E9%AC%BC%E6%AD%A6%E8%80%85%E6%88%98%E6%96%97%E6%8B%86%E8%A7%A3/image.png" class="w-25" title="力动"><p>“力动”是这套战斗系统里最基础、但也最关键的资源。具体特征如下：</p><ul><li><p>敌人有力动条，打空后触发“崩”，可处决、崩之一闪、破甲、破局。</p></li><li><p>玩家也有力动条，防御&#x2F;弹开失手会受到力动惩罚；鬼灯袋“再生”可以回复力动。</p></li><li><p>力动不仅影响处决，还影响<strong>破甲</strong>（持盾敌人）和<strong>破反击架势</strong>（武器发光立定的敌人）。</p></li></ul><p>所以它实际上是“架势&#x2F;平衡”系统。这套设计与《只狼》的架势条有相似之处，但《鬼武者》把它和一闪、吸魂、部位破坏联系了起来。</p><h3 id="气焰、看破、鬼之武具、鬼觉醒：四层爆发资源"><a href="#气焰、看破、鬼之武具、鬼觉醒：四层爆发资源" class="headerlink" title="气焰、看破、鬼之武具、鬼觉醒：四层爆发资源"></a>气焰、看破、鬼之武具、鬼觉醒：四层爆发资源</h3><img src="/2026/11/10/%E9%AC%BC%E6%AD%A6%E8%80%85%E6%88%98%E6%96%97%E6%8B%86%E8%A7%A3/image1.png" class="w-50" title="四大资源"><p><strong>气焰</strong>：</p><ul><li><p>蓝色方块，通过化劲积累。</p></li><li><p>气焰状态下，弹反可以大幅削减敌人架势。</p></li><li><p>敌人也会进入气焰状态（例如狱窗读条完成、大唾拉二阶段），形成“双方都可能进入爆发态”的对抗。</p></li></ul><p><strong>看破</strong>：</p><ul><li><p>红色方块，通过看破回避积累。</p></li><li><p>攒满后可发动“看破连斩”。</p></li></ul><p><strong>鬼之武具</strong>：</p><ul><li><p>蓝色能量条，吸收蓝魂积攒。</p></li><li><p>鬼之武具共六件：双刀（二天）、两刃（风卷）、大锤（地鸣）、魔笛（火鸟）、锐枪（闪空）、太刀（止水）。另有“鬼之刚弓”，用于解谜与远程战斗。</p></li><li><p>每件有独立攻击模组与战术效果，可切换。</p></li><li><p>鬼之武具各自具有独特的战斗机制，例如GP、JR等；命中还会产出大量黄魂用于回血。</p></li></ul><p><strong>鬼觉醒</strong>：</p><ul><li><p>紫色能量条，吸收紫魂积攒。</p></li><li><p>一闪判定更宽松，并可使用高伤害招式。</p></li><li><p>变身后受到攻击不会掉血，而是消耗鬼化槽本身。</p></li><li><p>鬼化槽耗尽前可以使出专属终结技“鬼武者突击”打出高伤。变身后无法使用“鬼之武具”。</p></li></ul><p>这三层资源的分工是：<strong>气焰奖励激进化解，鬼力奖励爆发窗口，鬼化奖励高风险高回报的处决压制</strong>。它们共同解决了一个问题：如果一闪太强，玩家会龟缩等弹反；所以必须给“主动进攻”一条同样诱人的收益路径。</p><h3 id="吸魂：将资源融入战斗"><a href="#吸魂：将资源融入战斗" class="headerlink" title="吸魂：将资源融入战斗"></a>吸魂：将资源融入战斗</h3><p>吸魂的操作是<strong>长按LT</strong>。敌人被击中&#x2F;击杀后掉落魂，黄魂回血，红魂用于升级，蓝魂充鬼力，紫魂用来鬼化。</p><p>关键在于，吸魂的操作是让玩家在战斗中<strong>停下来、主动吸收</strong>，而不是常见的“自动拾取”。</p><p>首先，玩家需要实时判断自己当前需不需要吸魂。</p><p>如果当前某个资源已满，玩家就会倾向于主动用掉这个资源，再来吸魂。</p><p>一方面，“吸于不吸”本身就是一层资源博弈。</p><p>另一方面，冗余资源就会吸引着玩家主动使出消耗资源进行特殊攻击，增强玩家主动性，加快战斗节奏。</p><p>此外，Boss例如大唾拉也会吸收周围的魂来强化自己，于是“吸魂”从单方面的贪婪，变成了<strong>双向的资源争夺</strong>：场上魂多时，玩家必须优先吸，否则Boss会变强——这样就愈发加快了战斗循环。</p><h2 id="系统耦合：为什么这套设计“爽”"><a href="#系统耦合：为什么这套设计“爽”" class="headerlink" title="系统耦合：为什么这套设计“爽”"></a>系统耦合：为什么这套设计“爽”</h2><h3 id="核心三角"><a href="#核心三角" class="headerlink" title="核心三角"></a>核心三角</h3><ul><li><p>防御&#x2F;弹开&#x2F;化劲克制普通攻击。</p></li><li><p>不可防御&#x2F;蓝光抓取克制纯防御。</p></li><li><p>闪避&#x2F;反抓克制不可防御&#x2F;抓取。</p></li><li><p>攻击&#x2F;处决克制敌人收招硬直。</p></li><li><p>一闪是“读对之后”的终极奖励。</p></li></ul><p>玩家和敌人在这几条规则里互相猜。一闪把“防守成功”转化成了“进攻收益”，所以战斗不是单向的“我打你防”，而是双向的“你敢不敢接”。</p><h3 id="正反馈与负反馈"><a href="#正反馈与负反馈" class="headerlink" title="正反馈与负反馈"></a>正反馈与负反馈</h3><ul><li><p><strong>正反馈</strong>：一闪 → 崩之一闪 → 大量魂 → 强化 → 更宽的一闪窗口&#x2F;更强鬼武具 → 更容易一闪。</p></li><li><p><strong>负反馈</strong>：乱按一闪 → 力动惩罚；贪婪吸魂 → 被围；不打狱窗 → 敌人气焰；支线不做 → 数值压制。</p></li></ul><p>好的战斗系统需要两者同时存在。只有正反馈会滚雪球，只有负反馈会劝退。</p><h3 id="心流曲线"><a href="#心流曲线" class="headerlink" title="心流曲线"></a>心流曲线</h3><ul><li><p>杂兵：练习读招与吸魂。</p></li><li><p>精英：考试，要求稳定执行。</p></li><li><p>Boss：综合检验，要求把学过的机制组合起来。</p></li><li><p>破魔镜&#x2F;探索：喘息与成长。</p></li><li><p>狱窗&#x2F;瘴气：时间与地形压力。</p></li></ul><h3 id="与同类对比"><a href="#与同类对比" class="headerlink" title="与同类对比"></a>与同类对比</h3><table><thead><tr><th>作品</th><th>核心</th><th>与本作的差异</th></tr></thead><tbody><tr><td>《只狼》</td><td>弹反积架势，攻防一体</td><td>本作更强调“一闪处决”和“吸魂贪婪”，输入更简化</td></tr><tr><td>《仁王》</td><td>构、残心、刷装备</td><td>本作是六把固定鬼武具 + 御守，构筑较浅</td></tr><tr><td>《战神》</td><td>方向重击、符文、群控</td><td>本作更偏一对一读招与刀剑博弈</td></tr><tr><td>《剑星》</td><td>弹反&#x2F;闪避双轴、演出</td><td>本作防御词汇更多，且有一闪必杀与魂经济</td></tr></tbody></table><p>本作的独特定位是：<strong>用极简输入保证信息不过载，用一闪做处决爆点，用吸魂来丰富战斗中的资源博弈。</strong></p><hr><h2 id="设计风险与可改进点"><a href="#设计风险与可改进点" class="headerlink" title="设计风险与可改进点"></a>设计风险与可改进点</h2><ol><li><p><strong>一闪即是终点</strong>：虽然一闪用“严格判定+蓝光&#x2F;粉光例外+力动惩罚”进行了平衡，但这是对常规玩家的限制。对于深度玩家，游戏寿命的终点大概率还是“一闪所有攻击”。相较于《鬼泣》等传统动作游戏的深度玩家最终目标，显得过于浅薄，游戏的上限明显不足。</p></li><li><p><strong>防守反击偏重</strong>：社区一直有玩家讨论“系统是不是太偏重防守反击、节奏被动”。正式版用鬼化、气焰、鬼武具、看破连斩增加进攻手段，但如果普适性仍不如等敌人先攻击+接招，玩家仍然会选择被动打法。</p></li><li><p><strong>输入简化后的重复感</strong>：只有轻&#x2F;重，长时间游玩容易乏力；尽管多数现代玩家难以接受格斗游戏式的长连段，但鬼泣、怪猎级别的简洁连段可以作为后期内容逐渐补充。不能只靠游戏难度、敌人匹配、处决演出、环境互动弥补内容缺憾。</p></li><li><p><strong>资源与支线绑定</strong>：素材主要来自支线，支线质量又参差，导致“想变强就得通马桶”，这是评测扣分的核心原因。当然，这不属于战斗系统。</p></li><li><p><strong>系统沟通成本</strong>：力动、气焰、鬼力、鬼化、御守、鬼灯袋、魂色，名词多且相互关联；如果教学不够清晰，玩家可能只学会“弹反+一闪”，忽略一半系统。</p></li><li><p><strong>Boss资源争夺的公平性</strong>：大唾拉吸魂强化自己是好设计，但看到它出现吸魂动作的时候基本上没法阻止了，玩家很容易感到“自己的资源被夺走”从而产生挫败感。如果加入反制窗口，而不是只有“有魂快吸”一个选择，整体的战斗深度会再上一层楼。</p></li></ol><h2 id="一句话总结"><a href="#一句话总结" class="headerlink" title="一句话总结"></a>一句话总结</h2><p>《鬼武者：剑之道》用<strong>极简输入</strong>把玩家逼回“读招”，用<strong>一闪</strong>把防守兑现成处决，用<strong>吸魂</strong>把处决兑现成成长，再用<strong>力动、气焰、鬼力</strong>让“贪婪”和“激进”都有代价。它的战斗是顶级剑戟博弈，简洁而富有挑战。</p><h2 id="附：参考资料"><a href="#附：参考资料" class="headerlink" title="附：参考资料"></a>附：参考资料</h2><ul><li><p>Steam 商店页（发售日、评价、基础设定）<br><a href="https://store/.steampowered/.com/app/2638890/Onimusha/_Way/_of/_the/_Sword/">https://store\.steampowered\.com/app/2638890/Onimusha\_Way\_of\_the\_Sword/</a></p></li><li><p>Steam 社区指南入口<br><a href="https://steamcommunity/.com/app/2638890/guides/">https://steamcommunity\.com/app/2638890/guides/</a></p></li><li><p>Capcom 官方英文页<br><a href="https://www/.capcom/-games/.com/onimusha/ws/en/-us/">https://www\.capcom\-games\.com/onimusha/ws/en\-us/</a></p></li><li><p>Capcom 官方日文页<br><a href="https://www/.capcom/-games/.com/onimusha/ws/ja/">https://www\.capcom\-games\.com/onimusha/ws/ja/</a></p></li><li><p>Wikipedia 条目（开发、发售、评价汇总）<br><a href="https://en/.wikipedia/.org/wiki/Onimusha:/_Way/_of/_the/_Sword">https://en\.wikipedia\.org/wiki/Onimusha:\_Way\_of\_the\_Sword</a></p></li><li><p>Onimusha Fandom Wiki（机制、敌人、Boss 资料）<br><a href="https://onimusha/.fandom/.com/wiki/Onimusha:/_Way/_of/_the/_Sword">https://onimusha\.fandom\.com/wiki/Onimusha:\_Way\_of\_the\_Sword</a></p></li><li><p>Metacritic 评分与评测汇总<br><a href="https://www/.metacritic/.com/game/onimusha/-way/-of/-the/-sword/">https://www\.metacritic\.com/game/onimusha\-way\-of\-the\-sword/</a></p></li><li><p>OpenCritic 检索入口<br><a href="https://opencritic/.com/search?q=Onimusha">https://opencritic\.com/search?q=Onimusha</a></p></li><li><p>Reddit r&#x2F;Onimusha（玩家实测与机制讨论）<br><a href="https://www/.reddit/.com/r/Onimusha/">https://www\.reddit\.com/r/Onimusha/</a></p></li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>拆解案</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>动作游戏</tag>
+      
+    </tags>
     
   </entry>
   
@@ -33,11 +45,11 @@
     
     <tags>
       
-      <tag>解谜</tag>
-      
       <tag>类银河恶魔城</tag>
       
       <tag>知识锁</tag>
+      
+      <tag>解谜</tag>
       
     </tags>
     
@@ -62,13 +74,13 @@
     
     <tags>
       
-      <tag>平台跳跃</tag>
-      
-      <tag>解谜</tag>
-      
       <tag>类银河恶魔城</tag>
       
       <tag>知识锁</tag>
+      
+      <tag>解谜</tag>
+      
+      <tag>平台跳跃</tag>
       
     </tags>
     
@@ -170,9 +182,9 @@
     
     <tags>
       
-      <tag>平台跳跃</tag>
-      
       <tag>解谜</tag>
+      
+      <tag>平台跳跃</tag>
       
     </tags>
     
